@@ -8,7 +8,6 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
 
     /*
-    //TODO branchきって、共有する．
 
     Step1:①~⑥の従って，コードを書いてみよう！(Step1はググルの禁止です！ググるときはメンターに宣言してね！)
     Step2:Step1が終わって時間があまったら、以下のことをしよう！ここからはググってもOK!!!
