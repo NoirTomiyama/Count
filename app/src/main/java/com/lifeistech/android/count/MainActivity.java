@@ -24,8 +24,6 @@ public class MainActivity extends AppCompatActivity {
 
     // ① 変数の宣言
 
-    TextView textView;
-    int number;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,28 +32,24 @@ public class MainActivity extends AppCompatActivity {
 
         // ② xmlファイルのidとの紐づけ
 
-        textView = (TextView)findViewById(R.id.textView);
 
         // ③ 変数の初期化
-        number = 0;
+
     }
 
 
     // ④ plusメソッドの中身を実装
     public void plus(View v){
-        number = number + 1;
-        textView.setText(String.valueOf(number));
+
     }
 
     // ⑤ minusメソッドの中身を実装
     public void minus(View v){
-        number = number - 1;
-        textView.setText(String.valueOf(number));
+
     }
 
     // ⑥clearメソッドの中身を実装
     public void clear(View v){
-        number = 0;
-        textView.setText(String.valueOf(number));
+
     }
 }
