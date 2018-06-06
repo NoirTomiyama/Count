@@ -2,6 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.lifeistech.android.count.MainActivity">
@@ -18,28 +19,28 @@
         android:textSize="36sp" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/plus"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/button2"
-        android:layout_toStartOf="@+id/button3"
+        android:layout_alignTop="@+id/minus"
+        android:layout_toLeftOf="@+id/clear"
+        android:layout_toStartOf="@+id/clear"
         android:onClick="plus"
-        android:text="+"
-        android:layout_toLeftOf="@+id/button3" />
+        android:text="+" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/minus"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="240dp"
-        android:layout_toEndOf="@+id/button3"
+        android:layout_toEndOf="@+id/clear"
+        android:layout_toRightOf="@+id/clear"
         android:onClick="minus"
-        android:text="-"
-        android:layout_toRightOf="@+id/button3" />
+        android:text="-" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/clear"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
